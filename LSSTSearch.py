@@ -275,7 +275,7 @@ def commandLineSearch(string):
                 print ('\n~~~\n')
                 print('Path: '+hit['path']+', Repository: '
                       + hit['repository']+", Branch: " + hit['branch'] + '\n')
-                print(hit.highlights("content", top=10))
+                print(hit.highlights("content", top=10).replace("\\n", "\n"))
 
 
 def metaIndexer(superDirectory):
